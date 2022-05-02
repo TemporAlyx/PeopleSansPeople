@@ -5,6 +5,8 @@
 /Temp
 /obj
 /Build
+/Logs
+
 
 /.idea
 /.vs
@@ -12,3 +14,6 @@
 
 /*.csproj
 /*.sln
+*.meta
+*.log
+peoplesanspeople_unity_env/Assets/Mixamo

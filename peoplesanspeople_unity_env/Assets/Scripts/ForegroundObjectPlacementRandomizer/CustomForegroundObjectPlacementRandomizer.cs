@@ -14,19 +14,17 @@ namespace UnityEngine.Perception.Randomization.Randomizers.SampleRandomizers
     [AddRandomizerMenu("Perception/Custom Foreground Object Placement Randomizer")]
     public class CustomForegroundObjectPlacementRandomizer : Randomizer
     {
-        public float minX = -7.5f;
-        public float maxX = 7.5f;
-        public float minY = -7.5f;
-        public float maxY = 7.5f;
-        private float _widthX => math.abs(minX) + math.abs(maxX);
-        private float _widthY => math.abs(minY) + math.abs(maxY);
 
-        public FloatParameter depth = new FloatParameter();
+        public FloatParameter randomFloatx = new FloatParameter { value = new UniformSampler(0, 1) };
+        public FloatParameter randomFloaty = new FloatParameter { value = new UniformSampler(0, 1) };
+        public FloatParameter randomFloatz = new FloatParameter { value = new UniformSampler(0, 1) };
+
+        //public FloatParameter depth = new FloatParameter();
 
         /// <summary>
         /// The minimum distance between all placed objects
         /// </summary>
-        public float separationDistance = 2f;
+        //public float separationDistance = 2f;
 
         /// <summary>
         /// The list of prefabs sample and randomly place
@@ -51,16 +49,19 @@ namespace UnityEngine.Perception.Randomization.Randomizers.SampleRandomizers
         protected override void OnIterationStart()
         {
             var seed = SamplerState.NextRandomState();
-            var placementSamples = CustomPoissonDiskSampling.GenerateSamples(
-                _widthX, _widthY, separationDistance, seed);
-            var offset = new Vector3(minX, minY, 0f);  // this is to recenter the samples at origin
-            foreach (var sample in placementSamples)
-            {
-                float placementDepth = depth.Sample();
-                var instance = m_GameObjectOneWayCache.GetOrInstantiate(prefabs.Sample());
-                instance.transform.position = new Vector3(sample.x, sample.y, placementDepth) + offset;
-            }
-            placementSamples.Dispose();
+            //var placementSamples = CustomPoissonDiskSampling.GenerateSamples(
+            //    _widthX, _widthY, separationDistance, seed);
+            //var offset = new Vector3(minX, minY, 0f);  // this is to recenter the samples at origin
+            //foreach (var sample in placementSamples)
+            //{
+            //    float placementDepth = depth.Sample();
+            //    var instance = m_GameObjectOneWayCache.GetOrInstantiate(prefabs.Sample());
+            //    instance.transform.position = new Vector3(sample.x, sample.y, placementDepth) + offset;
+            //}
+            //placementSamples.Dispose();
+
+            var instance = m_GameObjectOneWayCache.GetOrInstantiate(prefabs.Sample());
+            instance.transform.position = new Vector3(randomFloatx.Sample(), randomFloaty.Sample(), randomFloatz.Sample()); // + offset
         }
 
         /// <summary>
