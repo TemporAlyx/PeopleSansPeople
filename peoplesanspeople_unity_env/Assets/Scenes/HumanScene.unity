@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb764a3b58fb647d5b8c2df18ae3e600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 3000
+  minIntensity: 2500
   maxIntensity: 10000
 --- !u!1 &90259227
 GameObject:
@@ -682,7 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a72b8ad3db648a496db49ad2623f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enabledProbability: 0.23
+  enabledProbability: 0.2
 --- !u!114 &233885580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minIntensity: 1000
-  maxIntensity: 10000
+  maxIntensity: 8000
 --- !u!1 &259230615
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minIntensity: 5000
-  maxIntensity: 30000
+  maxIntensity: 12500
 --- !u!114 &259230620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,11 +1002,11 @@ MonoBehaviour:
   - id: 14
   configuration: {fileID: 0}
   constants:
-    randomSeed: 539662
-    totalIterations: 1000
+    randomSeed: 53966
+    totalIterations: 1000000
     instanceCount: 1
     instanceIndex: 0
-    framesPerIteration: 2
+    framesPerIteration: 1
   references:
     version: 1
     00000000:
@@ -1054,7 +1054,7 @@ MonoBehaviour:
     00000001:
       type: {class: CustomBackgroundOccluderScaleRandomizer, ns: , asm: Assembly-CSharp}
       data:
-        m_Enabled: 1
+        m_Enabled: 0
         collapsed: 1
         <enabledStateCanBeSwitchedByUser>k__BackingField: 1
         scale:
@@ -11810,7 +11810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minIntensity: 2000
-  maxIntensity: 10000
+  maxIntensity: 8000
 --- !u!1 &467697065
 GameObject:
   m_ObjectHideFlags: 0
@@ -12144,7 +12144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623668132}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: -2, y: 8, z: 4}
+  m_LocalPosition: {x: -2, y: 5, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1334384788}
@@ -12162,7 +12162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a72b8ad3db648a496db49ad2623f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enabledProbability: 0.33
+  enabledProbability: 1
 --- !u!114 &623668137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12175,8 +12175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb764a3b58fb647d5b8c2df18ae3e600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 5000
-  maxIntensity: 30000
+  minIntensity: 1000
+  maxIntensity: 1001
 --- !u!1 &853527739
 GameObject:
   m_ObjectHideFlags: 0
@@ -12407,7 +12407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a72b8ad3db648a496db49ad2623f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enabledProbability: 0.33
+  enabledProbability: 0.333
 --- !u!114 &853527744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12421,7 +12421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minIntensity: 2000
-  maxIntensity: 10000
+  maxIntensity: 8000
 --- !u!1 &1334384787
 GameObject:
   m_ObjectHideFlags: 0
@@ -13046,7 +13046,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 10000
+  m_Intensity: 8000
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -13130,7 +13130,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 10000
+  m_Intensity: 8000
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
