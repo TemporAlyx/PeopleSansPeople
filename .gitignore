@@ -7,7 +7,7 @@
 /Build
 /Logs
 
-
+/.ipynb_checkpoints
 /.idea
 /.vs
 /.vscode
