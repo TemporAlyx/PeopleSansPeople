@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "metric_definitions": [
+    {
+      "id": "db1b258e-d1d0-41b6-8751-16f601a2e230",
+      "name": "scenario_iteration",
+      "description": "Iteration information for dataset sequences"
+    },
+    {
+      "id": "14adb394-46c0-47e8-a3f0-99e754483b76",
+      "name": "random-seed",
+      "description": "The random seed used to initialize the random state of the simulation. Only triggered once per simulation."
+    }
+  ]
+}
