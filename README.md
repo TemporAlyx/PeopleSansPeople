@@ -1,23 +1,9 @@
 # PeopleSansPeopleVRPose: A Fork of PeopleSansPeople For Generating a 3D Pose Estimation Dataset For VR
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!--
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCKG4HKTMK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZCKG4HKTMK');
-</script>
--->
-
 [![license badge](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE.md)
 &nbsp;
 <img src="https://img.shields.io/badge/unity-2020.3.20f1-green.svg?style=flat-square" alt="unity 2020.3.20f1">
-&nbsp;
-<img src="https://badge-proxy.cds.internal.unity3d.com/5ab9a162-9dd0-4ba1-ba41-cf25378a927a?style=flat-square" alt="perception 0.9.0-preview.2">
-
+  
   
 Check out the base project for more info https://github.com/Unity-Technologies/PeopleSansPeople
 
