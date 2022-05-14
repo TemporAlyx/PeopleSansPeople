@@ -39,6 +39,7 @@ rgbs and segs are 1 dimensional arrays the length of the dataset containing the 
 * Continue testing/iterating on model concepts
 * setup and test multiple camera angle instances
 
+For more information on the overall project idea and development, check out the Research Project Doc.
 
 ## License
 PeopleSansPeople is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE.md) for the full license text.
