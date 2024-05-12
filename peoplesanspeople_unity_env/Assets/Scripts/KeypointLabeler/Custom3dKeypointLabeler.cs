@@ -506,6 +506,7 @@ namespace UnityEngine.Perception.GroundTruth
             /// The keypoint's y-coordinate pixel location
             /// </summary>
             public float y;
+            public float z;
             /// <summary>
             /// The state of the point,
             /// 0 = not present,
@@ -729,12 +730,14 @@ namespace UnityEngine.Perception.GroundTruth
             {
                 keypoints[idx].x = 0;
                 keypoints[idx].y = 0;
+                keypoints[idx].z = 0;
                 keypoints[idx].state = 0;
             }
             else
             {
                 keypoints[idx].x = loc.x;
                 keypoints[idx].y = loc.y;
+                keypoints[idx].z = loc.z;
                 keypoints[idx].state = 2;
             }
 

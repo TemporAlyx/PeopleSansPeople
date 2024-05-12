@@ -32,6 +32,11 @@ MonoBehaviour:
     rigLabel: 22
     color: {r: 1, g: 0.5694697, b: 0, a: 1}
     selfOcclusionDistance: 0.15
+  - label: neck
+    associateToRig: 1
+    rigLabel: 9
+    color: {r: 1, g: 0.97694683, b: 0, a: 1}
+    selfOcclusionDistance: 0.15
   - label: left_shoulder
     associateToRig: 1
     rigLabel: 13
@@ -94,7 +99,7 @@ MonoBehaviour:
     selfOcclusionDistance: 0.15
   - label: scale
     associateToRig: 0
-    rigLabel: 20
-    color: {r: 1, g: 0, b: 0.6039734, a: 1}
+    rigLabel: 55
+    color: {r: 0, g: 0, b: 0, a: 1}
     selfOcclusionDistance: 0.15
   skeleton: []

@@ -70,14 +70,16 @@ public class CustomCameraRandomizer : Randomizer
 
                 volume.transform.position = new Vector3(x_value, y_value, z_value);
                 
-                if (Vector3.Distance(volume.transform.position, taggedForegroundObjs[0].GetComponent<Transform>().position) < 2.5)
+                if (Vector3.Distance(volume.transform.position, taggedForegroundObjs[0].GetComponent<Transform>().position) < 2.4)
                 {
                     volume.transform.position = new Vector3(x_value, y_value, z_value+1.9f);
                 }
 
-                if (Vector3.Distance(volume.transform.position, taggedForegroundObjs[0].GetComponent<Transform>().position) > 4.8f)
+                float disttochar = Vector3.Distance(volume.transform.position, taggedForegroundObjs[0].GetComponent<Transform>().position);
+
+                if (disttochar > 4.5f)
                 {
-                    volume.transform.position = new Vector3(x_value, y_value, z_value - 2.2f);
+                    volume.transform.position = new Vector3(x_value, y_value, z_value - (disttochar - 4.5f));
                 }
             }
 
@@ -86,7 +88,7 @@ public class CustomCameraRandomizer : Randomizer
             {
                 volume.transform.LookAt(taggedForegroundObjs[0].GetComponent<Transform>());
 
-                volume.transform.rotation = volume.transform.rotation * Quaternion.Euler(new Vector3(-5.0f, 0.0f, 0.0f));
+                volume.transform.rotation = volume.transform.rotation * Quaternion.Euler(new Vector3(-6.2f, 0.0f, 0.0f));
             }
         }
     }

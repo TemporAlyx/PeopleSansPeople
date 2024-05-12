@@ -39,13 +39,13 @@ public class CustomPostProcessVolumeRandomizer : Randomizer
             ModWhiteBalance(volumeProfile);
 
             // Modify Film Grain
-            ModFilmGrain(volumeProfile);
+            //ModFilmGrain(volumeProfile);
 
             // Modify Lens Distortion
-            ModLensDistortion(volumeProfile);
+            //ModLensDistortion(volumeProfile);
 
             // Modify Depth of Field - remember to set Focus Mode to (Use Physical Camera) and Quality to (Custom) in inspector
-            ModDepthOfField(volumeProfile);
+            //ModDepthOfField(volumeProfile);
 
             // Modify Color Adjustment
             ModColorAdjustments(volumeProfile);
