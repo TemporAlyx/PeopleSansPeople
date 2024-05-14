@@ -486,6 +486,14 @@ namespace UnityEngine.Perception.GroundTruth
             /// Array of all of the keypoints
             /// </summary>
             public Keypoint[] keypoints;
+            /// <summary>
+            /// the camera position when the keypoints were recorded
+            /// </summary>
+            public float3 camera_position;
+            /// <summary>
+            /// the camera forward when the keypoints were recorded
+            /// </summary>
+            public float3 camera_forward;
         }
 
         /// <summary>
@@ -697,7 +705,9 @@ namespace UnityEngine.Perception.GroundTruth
                     keypoints = cachedKeypointEntry.keypoints.ToArray(),
                     label_id = cachedKeypointEntry.label_id,
                     pose = cachedKeypointEntry.pose,
-                    template_guid = cachedKeypointEntry.template_guid
+                    template_guid = cachedKeypointEntry.template_guid,
+                    camera_position = cameraPosition,
+                    camera_forward = cameraforward
                 };
                 keypointEntries.Add(keypointEntry);
             }

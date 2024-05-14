@@ -9899,7 +9899,7 @@ MonoBehaviour:
       type: {class: AnimationRandomizer, ns: UnityEngine.Perception.Randomization.Randomizers.SampleRandomizers, asm: Unity.Perception.Runtime}
       data:
         m_Enabled: 1
-        collapsed: 0
+        collapsed: 1
         <enabledStateCanBeSwitchedByUser>k__BackingField: 1
     0000000A:
       type: {class: ShaderGraphTextureRandomizer, ns: UnityEngine.Perception.Randomization.Randomizers.SampleRandomizers, asm: Assembly-CSharp}
@@ -10176,8 +10176,8 @@ MonoBehaviour:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
         range:
-          minimum: 0
-          maximum: 0
+          minimum: -1
+          maximum: 1
         <minAllowed>k__BackingField: 0
         <maxAllowed>k__BackingField: 0
         <shouldCheckValidRange>k__BackingField: 0
@@ -10194,8 +10194,8 @@ MonoBehaviour:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
         range:
-          minimum: 0
-          maximum: 0
+          minimum: -1
+          maximum: 1
         <minAllowed>k__BackingField: 0
         <maxAllowed>k__BackingField: 0
         <shouldCheckValidRange>k__BackingField: 0
@@ -10294,7 +10294,7 @@ MonoBehaviour:
       data:
         range:
           minimum: 47
-          maximum: 67
+          maximum: 60
         <minAllowed>k__BackingField: 0
         <maxAllowed>k__BackingField: 0
         <shouldCheckValidRange>k__BackingField: 0
@@ -10311,8 +10311,8 @@ MonoBehaviour:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
         range:
-          minimum: -3.1
-          maximum: 3.1
+          minimum: -3
+          maximum: 3
         <minAllowed>k__BackingField: 0
         <maxAllowed>k__BackingField: 0
         <shouldCheckValidRange>k__BackingField: 0
@@ -10321,7 +10321,7 @@ MonoBehaviour:
       data:
         range:
           minimum: -1.1
-          maximum: 1.8
+          maximum: 1.5
         <minAllowed>k__BackingField: 0
         <maxAllowed>k__BackingField: 0
         <shouldCheckValidRange>k__BackingField: 0
@@ -11554,7 +11554,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   volumeAnchorOverride: {fileID: 0}
-  antialiasing: 0
+  antialiasing: 1
   SMAAQuality: 2
   dithering: 0
   stopNaNs: 0

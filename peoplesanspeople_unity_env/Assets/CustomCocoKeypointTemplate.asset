@@ -22,6 +22,11 @@ MonoBehaviour:
     rigLabel: 0
     color: {r: 1, g: 0, b: 0, a: 1}
     selfOcclusionDistance: 0.15
+  - label: headsetfwd
+    associateToRig: 0
+    rigLabel: 23
+    color: {r: 1, g: 1, b: 1, a: 1}
+    selfOcclusionDistance: 0.15
   - label: left_controller
     associateToRig: 0
     rigLabel: 21
@@ -31,6 +36,11 @@ MonoBehaviour:
     associateToRig: 0
     rigLabel: 22
     color: {r: 1, g: 0.5694697, b: 0, a: 1}
+    selfOcclusionDistance: 0.15
+  - label: head
+    associateToRig: 1
+    rigLabel: 10
+    color: {r: 0.5471698, g: 0.24311572, b: 0, a: 1}
     selfOcclusionDistance: 0.15
   - label: neck
     associateToRig: 1
